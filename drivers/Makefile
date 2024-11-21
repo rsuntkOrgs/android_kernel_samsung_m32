@@ -203,8 +203,6 @@ obj-$(CONFIG_SENSORS)		+= sensors/
 
 # SPU signature verify
 obj-$(CONFIG_SPU_VERIFY) += spu_verify/
-# uH
-obj-$(CONFIG_UH)		+= uh/
 
 # OLOG
 obj-y				+= kperfmon/
