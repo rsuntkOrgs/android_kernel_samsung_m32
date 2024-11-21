@@ -50,7 +50,7 @@ export KCFLAGS=-w
 export CONFIG_SECTION_MISMATCH_WARN_ONLY=y
 
 DATE=$(date +'%Y%m%d%H%M%S')
-IMAGE="$KERNEL_OUT/arch/$ARCH/boot/Image"
+IMAGE="$KERNEL_OUT/arch/$ARCH/boot/Image.gz-dtb"
 
 if [ -z $JOBS ]; then
 	JOBS=$(nproc --all)
