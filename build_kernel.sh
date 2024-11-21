@@ -50,15 +50,10 @@ export KCFLAGS=-w
 export CONFIG_SECTION_MISMATCH_WARN_ONLY=y
 
 DATE=$(date +'%Y%m%d%H%M%S')
-IMAGE="$KERNEL_OUT/arch/$ARCH/boot/Image.gz-dtb"
+IMAGE="$KERNEL_OUT/arch/$ARCH/boot/Image.gz"
 
 if [ -z $JOBS ]; then
 	JOBS=$(nproc --all)
-fi
-
-# we use bt folder for reference
-if [ -d $(pwd)/drivers/misc/mediatek/connectivity/bt ]; then
-	export TARGET_PRODUCT="a04"
 fi
 
 # Make flags
