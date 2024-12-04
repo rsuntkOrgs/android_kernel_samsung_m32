@@ -81,7 +81,7 @@ UTS_TRUNCATE="cut -b -$UTS_LEN"
   CC_VERSION=$($CC -v 2>&1 | grep ' version ' | sed 's/[[:space:]]*$//')
   LD_VERSION=$($LD -v | head -n1 | sed 's/(compatible with [^)]*)//' \
 		      | sed 's/[[:space:]]*$//')
-  printf '#define LINUX_COMPILER "%s"\n' "$CC_VERSION, $LD_VERSION"
+  printf '#define LINUX_COMPILER "%s"\n' "$CC_VERSION, $LD_VERSION, @rsuntkOrgs (mt6769v platform, Samsung M325FV)"
 ) > .tmpcompile
 
 # Only replace the real compile.h if the new one is different,
