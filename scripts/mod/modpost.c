@@ -32,12 +32,12 @@ static int all_versions = 0;
 /* If we are modposting external module set to 1 */
 static int external_module = 0;
 /* Warn about section mismatch in vmlinux if set to 1 */
-static int vmlinux_section_warnings = 1;
+static int vmlinux_section_warnings = 0;
 /* Only warn about unresolved symbols */
 static int warn_unresolved = 0;
 /* How a symbol is exported */
 static int sec_mismatch_count = 0;
-static int sec_mismatch_verbose = 1;
+static int sec_mismatch_verbose = 0;
 static int sec_mismatch_fatal = 0;
 /* ignore missing files */
 static int ignore_missing_files;
